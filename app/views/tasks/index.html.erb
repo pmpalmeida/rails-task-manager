@@ -1,0 +1,9 @@
+
+<h1> Lista de todos as tasks </h1>
+
+
+<% @tasks.each do |task| %>
+
+  <h2>Titulo: <%= task.title %> </h2>
+  <h5>Descricao: <%= task.description %> </h5>
+<% end %>

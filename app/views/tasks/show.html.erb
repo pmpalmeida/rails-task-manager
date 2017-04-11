@@ -1,0 +1,13 @@
+
+<h1> Lista task especifica </h1>
+
+
+  <h2>Titulo: <%= @task.title %> </h2>
+  <h5>Descricao: <%= @task.description %> </h5>
+
+
+
+<%= link_to "Apagar esta task", task_path(@task), method: :delete, data: { confirm: "Você tem certeza?" } %>
+
+
+<%= link_to "Pagina Inicial", tasks_path %>
